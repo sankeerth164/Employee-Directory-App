@@ -1,5 +1,3 @@
-# Employee-Directory-App
-A modern, responsive Employee Directory web application for managing and viewing employee profiles. Built with HTML, CSS, and JavaScript.
 # Employee Directory App
 
 A modern, responsive Employee Directory web application for managing and viewing employee profiles. Built with HTML, CSS, and JavaScript.
@@ -35,6 +33,10 @@ A modern, responsive Employee Directory web application for managing and viewing
   - Edit `styles.css` and change the `:root` color variables to use your own palette.
 - **Employee Data:**
   - The initial employee data is in `script.js` and can be replaced or extended.
+
+## Demo
+
+<video src="Demo.mp4" controls width="700"></video>
 
 ## License
 This project is for educational/demo purposes. Feel free to use and modify it for your needs. 

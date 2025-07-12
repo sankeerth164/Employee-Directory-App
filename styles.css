@@ -1,0 +1,418 @@
+/* Vibrant Pink Theme */
+:root {
+    --primary-dark: #c2184b;
+    --primary: #f72366;
+    --secondary: #ff5c8a;
+    --accent: #ffd6e3;
+    --background: #fff0f6;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background: var(--background);
+    color: var(--primary-dark);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+header {
+    width: 100vw;
+    left: 0;
+    position: relative;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, var(--primary-dark) 0%, var(--primary) 100%);
+    border-bottom: 2px solid var(--accent);
+    box-shadow: 0 4px 12px var(--secondary)22;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 4vw 14px 4vw;
+    gap: 0;
+    position: relative;
+}
+
+header h1 {
+    flex: 0 1 auto;
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px var(--primary-dark)22;
+    margin: 0;
+    text-align: left;
+}
+
+header .btn-primary {
+    position: static;
+    right: auto;
+    top: auto;
+    transform: none;
+    margin-left: 0;
+    font-size: 1rem;
+    padding: 8px 18px;
+    background: #fff;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    box-shadow: 0 2px 8px var(--secondary)22;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+header .btn-primary:hover {
+    background: var(--accent);
+    color: var(--primary-dark);
+    border: 2px solid var(--primary-dark);
+}
+
+footer {
+    width: 100vw;
+    left: 0;
+    position: relative;
+    box-sizing: border-box;
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    margin-top: 40px;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+footer .container {
+    padding: 12px 0;
+    font-size: 0.95rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.search-input, .filter-select {
+    padding: 12px 18px;
+    border: 2px solid var(--secondary);
+    border-radius: 12px;
+    font-size: 16px;
+    background: #fff;
+    transition: border 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px var(--secondary)22;
+}
+
+.search-input:focus, .filter-select:focus {
+    border: 2px solid var(--primary-dark);
+    outline: none;
+    box-shadow: 0 0 0 2px var(--primary)44;
+}
+
+.search-input {
+    flex: 2 1 120px;
+    min-width: 120px;
+    font-size: 1rem;
+}
+
+.filter-select {
+    flex: 1 1 90px;
+    min-width: 90px;
+    font-size: 0.95rem;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.2s;
+    box-shadow: 0 2px 8px var(--secondary)22;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, var(--primary-dark) 0%, var(--primary) 100%);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: #fff;
+}
+
+.btn-secondary {
+    background: var(--secondary);
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px) scale(1.04);
+}
+
+.btn-danger {
+    background: var(--primary-dark);
+    color: #fff;
+    padding: 8px 18px;
+    font-size: 15px;
+}
+
+.btn-danger:hover {
+    background: var(--primary);
+    transform: translateY(-2px) scale(1.04);
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px 24px; /* 40px vertical, 24px horizontal */
+}
+
+.employee-card {
+    background: linear-gradient(135deg, #fff 60%, var(--accent) 100%);
+    padding: 32px;
+    border-radius: 18px;
+    box-shadow: 0 6px 24px var(--secondary)22;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid var(--accent);
+    position: relative;
+    width: auto;
+    height: auto;
+    display: block;
+    font-size: 1rem;
+    margin: 16px auto;
+    text-align: center;
+}
+
+.employee-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 32px var(--primary)33;
+    border: 2px solid var(--primary-dark);
+}
+
+.employee-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.employee-name {
+    flex: 1 1 auto;
+    color: var(--primary-dark);
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    text-align: center !important;
+    width: 100%;
+    display: block;
+}
+
+.employee-role {
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.employee-department {
+    background: linear-gradient(90deg, var(--primary-dark) 0%, var(--primary) 100%);
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 1rem;
+    display: inline-block;
+    margin-bottom: 12px;
+    font-weight: 500;
+    box-shadow: 0 2px 8px var(--secondary)22;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.employee-contact {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.employee-contact p {
+    margin: 5px 0;
+    color: var(--primary-dark);
+    font-size: 1rem;
+}
+
+.card-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+    justify-content: center;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--secondary)33;
+    backdrop-filter: blur(2px);
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #fff 60%, var(--accent) 100%);
+    margin: 5% auto;
+    padding: 36px 32px 28px 32px;
+    border-radius: 18px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 8px 32px var(--secondary)33;
+    border: 2px solid var(--accent);
+}
+
+.close {
+    position: absolute;
+    right: 24px;
+    top: 18px;
+    color: var(--primary-dark);
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close:hover {
+    color: var(--primary);
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: var(--primary-dark);
+    letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--secondary);
+    border-radius: 10px;
+    font-size: 16px;
+    background: var(--background);
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border: 2px solid var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 2px var(--primary)44;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 32px;
+}
+
+@media (min-width: 600px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    .controls {
+        gap: 12px;
+    }
+    .employee-grid {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 24px;
+    }
+    .employee-card {
+        font-size: 1.05rem;
+        min-height: 320px;
+        padding: 32px 32px 24px 32px;
+    }
+    footer .container {
+        font-size: 1.05rem;
+    }
+}
+
+@media (min-width: 900px) {
+    header .container {
+        padding: 24px 2vw 20px 2vw;
+    }
+    header h1 {
+        font-size: 2.7rem;
+    }
+    .controls {
+        gap: 15px;
+    }
+    .employee-card {
+        font-size: 1.1rem;
+        min-height: 340px;
+        padding: 36px 36px 28px 36px;
+    }
+    footer .container {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .employee-card {
+        width: 90vw;
+        max-width: 320px;
+        height: 340px;
+        font-size: 0.98rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .employee-card {
+        width: 98vw;
+        max-width: 340px;
+        height: auto;
+        min-height: 260px;
+        font-size: 0.95rem;
+        padding: 12px 4px 10px 4px;
+    }
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container {
+    flex: 1 0 auto;
+}
+footer {
+    flex-shrink: 0;
+}
